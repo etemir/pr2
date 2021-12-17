@@ -27,9 +27,11 @@
 <img width="623" alt="image" src="https://user-images.githubusercontent.com/91737637/146613899-e4e3deca-9daf-4917-9204-9cd8ac14fb40.png">
 
 client:
+
 <img width="602" alt="image" src="https://user-images.githubusercontent.com/91737637/146613992-87a60143-1c5b-47be-8088-f3bb798ab2ee.png">
 
 server:
+
 <img width="483" alt="image" src="https://user-images.githubusercontent.com/91737637/146614018-ee0ac21b-b2d0-4542-b8aa-3eb876465d5c.png">
 
 Проведите рефакторинг кода клиента и сервера так, чтобы все, относящееся к генерации ключей, установлению режима шифрования, шифрованию исходящих и дешифрованию входящих сообщений было отделено от основного алгоритма обмена сообщениями.
