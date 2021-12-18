@@ -27,12 +27,15 @@
 
 Создаем файл, а затем переименовываю его, с помощью команды mv
 
+
 <img width="218" alt="image" src="https://user-images.githubusercontent.com/91737637/146652560-25c48478-b872-4e9c-b500-c5119eb27a98.png">
 
 с помощбю команды cat выводим содержимое файла: 
+
 <img width="206" alt="image" src="https://user-images.githubusercontent.com/91737637/146652612-db068265-47e6-4c09-b38b-737ce31335b5.png">
 
 получаем файл с помощью команды get:
+
 <img width="161" alt="image" src="https://user-images.githubusercontent.com/91737637/146652986-009c60c3-5ae9-4f3e-86f6-d202cec32e87.png">
 <img width="575" alt="image" src="https://user-images.githubusercontent.com/91737637/146652999-4cd79444-44d0-4277-ae4a-832675758bba.png">
 
