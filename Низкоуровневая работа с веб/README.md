@@ -5,7 +5,9 @@ Content-type
 Server
 Content-length
 Connection: close.
+
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/91737637/146621936-8fb51af1-1ad1-4373-858d-806de4bf3b4b.png">
+
 <img width="430" alt="image" src="https://user-images.githubusercontent.com/91737637/146622623-1b871973-570d-427b-84da-ebd30d3231e9.png">
 
 
