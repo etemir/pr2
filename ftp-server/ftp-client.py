@@ -63,14 +63,14 @@ while True:
         break
     sock = socket.socket()
     sock.connect((TOAST, TORT))
-    if rqst[:9] == "send":
+    if rqst[:5] == "send ":
         if rqst == "send":
             print("Файл несуществует")
         else:
             goto(rqst)
     else:
         sock.send(render(rqst))
-        if rqst[:9] == "get " or rqst == "get":
+        if rqst[:4] == "get " or rqst == "get":
             gett(rqst)
         else:
             rspns = sock.recv(1024).decode()

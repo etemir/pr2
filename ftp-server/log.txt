@@ -1,0 +1,128 @@
+Сервер повешен на порт 20039
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeprnt
+Ответ: \
+Запрос: El09=logintemir=password\=cur_dir0=file_sizels
+Ответ: 
+Запрос: El09=logintemir=password\=cur_dir0=file_sizecd ..
+Ответ: \
+Запрос: El09=logintemir=password\=cur_dir0=file_sizemkdir temirr
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizedeldir temirr
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizetouch ell
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizerm ell
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizetouch ekk
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizemv ekk el
+Ответ: ALL OK
+Запрос: El09=logintemir=password\=cur_dir0=file_sizecat el
+Ответ: РҐСЌР»Р»РѕСѓС‡РёРєРё!
+Запрос: El09=logintemir=password\=cur_dir0=file_sizecat el
+Ответ: hello my dear friend
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeget andr
+Файл отправлен
+Ответ: b'Invalid pathFLD$$&'
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeget andr.png
+Файл отправлен
+Ответ: b'HU&#'
+Сервер повешен на порт 20039
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeget andr.png
+Файл отправлен
+Ответ: b'HU&#'
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeget andr.png
+Файл отправлен
+Ответ: b'HU&#'
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir242066=file_sizesend peep.jpg
+Файл получен
+Ответ: uploaded OK
+Сервер повешен на порт 20039
+Запрос: El09=logintemir=password\=cur_dir0=file_sizehelp
+Ответ: 
+prnt - напечатать рабочий каталог
+ls - содержимое каталога
+cd (path) - перемещение
+mkdir (dirname) - создать каталог
+deldir (dirname) - удалить каталог
+touch (filename) - создать файл
+rm (filename) - удалить файл
+mv (filename) (filename) - переименовать файл
+cat (filename) - вывести содержимое файла
+get (filename) - получить файл
+send (filename) - отправить файл
+
+Запрос: El09=logintemir=password\=cur_dir0=file_sizeseng peep.jpg
+Ответ: nothing commands
+Запрос: El09=logintemir=password\=cur_dir242066=file_sizesend peep.jpg
+Ответ: Storage FULL!
