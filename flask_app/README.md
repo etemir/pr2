@@ -18,6 +18,8 @@
 функция saver сохраняет словарь, который хранит логин (email) и пароль пользователя, а также дату регистрации. Она сохраняет его в виде сериализоного объекста с помощью модуля pickle.
 <img width="355" alt="image" src="https://user-images.githubusercontent.com/91737637/146654830-4e6d3518-da64-42e0-b4bb-9f159ed5e99e.png">
 
+мы создали самоподисанный сертификат SSL и транслируем входящие соединения порту 443 (протокол https) на порт 8000 gunicorn
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/91737637/146654916-8ef1d986-7fdc-471e-8d5c-0addb045b4a3.png">
 
 
 
