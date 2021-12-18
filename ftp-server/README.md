@@ -3,6 +3,7 @@
 
 
 Создаем каталог temirr с помощью команды mkdir
+
 <img width="292" alt="image" src="https://user-images.githubusercontent.com/91737637/146652275-e6e1d909-3b83-4df8-abdf-a4c014c2f03b.png">
 
 <img width="566" alt="image" src="https://user-images.githubusercontent.com/91737637/146652292-6f47e631-688a-425d-93b1-c274c39ed548.png">
@@ -46,9 +47,11 @@
 <img width="534" alt="image" src="https://user-images.githubusercontent.com/91737637/146653134-90ff341a-15aa-43db-904f-6c6dc15a1b0b.png">
 
 Добавьте возможность регистрации новых пользователей на сервере. При регистрации для пользователя создается новая рабочая папка (проще всего для ее имени использовать логин пользователя) и сфера деятельности этого пользователя ограничивается этой папкой.
+
+Реализуйте учётную запись администратора сервера.
 Реализуете квотирование дискового пространства для каждого пользователя.
+
 <img width="207" alt="image" src="https://user-images.githubusercontent.com/91737637/146653269-d192a26d-256f-4a71-9f4a-909a5d551c6a.png">
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/91737637/146653321-0e3aa91e-0fd5-473e-a6de-bf234aaa98aa.png">
 
 
-Реализуйте учётную запись администратора сервера.
