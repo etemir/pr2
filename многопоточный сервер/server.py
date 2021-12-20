@@ -1,6 +1,7 @@
 import socket,sys,getpass,random
 import csv
 import threading
+import os
 
 def s_send(sock, data):
     data = data.decode()
@@ -17,8 +18,9 @@ socket.socket.s_recv = s_recv
 
 
 def prnt(string):
-    with open('log_serv.txt', "a+") as txtfile:
-        txtfile.write(string+'\n')
+    if LOG:
+        with open('log_serv.txt', "a+") as txtfile:
+            txtfile.write(string+'\n')
 
 def secure_input():
     con_port=getpass.getpass(prompt = 'Введите порт: ')
@@ -46,7 +48,7 @@ def log_in(conn):
             
             if user and user[0] == login:
                 auth(conn, user[1], login)
-                return True
+                return login
     return register(conn, login)
 
 def auth(conn, passwd, login):
@@ -65,7 +67,7 @@ def register(conn, login):
         writer = csv.writer(scvfile, delimiter = ';')
         writer.writerow([login, password])
     conn.s_send(f'{login}, вы зарегестрированы!'.encode())
-    return True
+    return login
 
 def messaging(sock):
     while True:
@@ -74,33 +76,72 @@ def messaging(sock):
         prnt('Отправка данных клиенту')
         conn.s_send(msg.encode())
 
-def listening(sock):
-    threading.Thread(target = messaging, args = (sock, ), daemon = True).start()
+def listening(sock, login):
     try:
         while True:
             mas = sock.s_recv(1024).decode()
             prnt('Прием данных')
-            print(mas)
+            print(login + "~: " + mas)
+            for con, log in users:
+                if con != sock:
+                    con.s_send((login+"~: "+mas).encode())
+
     except ConnectionResetError as err:
         prnt('Клиент отключился')
         print('Клиент отключился(')
+        users.remove([sock, login])
         raise
+
+
+def user_thread(conn):
+    login = log_in(conn)
+    users.append([conn, login])
+    threading.Thread(target = listening, args = (conn, login), daemon = True).start()
+
+def get_connect(sock):
+    while True:
+        if LISTEN:
+            conn, addr = sock.accept()
+            prnt('Подключен клиент: '+ str(addr))
+            print('Подключен клиент: ', addr)
+            threading.Thread(target = user_thread, args = (conn, ), daemon = True).start()
+
+
+LOG = True
+LISTEN = True
 sys.tracebacklimit = 0
 prnt('Запуск сервера')
-print('''При разрыве соединения сервер продолжает работать''')
+print('''При разрыве соединения сервер продолжает работать
+При получении команды shutdown - завершает работу''')
 
+users = []
 c_port = 13131
 sock = socket.socket()
 try_bind(sock, c_port)
 sock.listen(0)
 prnt('Начало прослушивания порта')
+threading.Thread(target = get_connect, args = (sock, ), daemon = True).start()
 while True:
-    conn, addr = sock.accept()
-    prnt('Подключен клиент: '+ str(addr))
-    print('Подключен клиент: ', addr)
-    log_in(conn)
-    threading.Thread(target = listening, args = (conn, ), daemon = True).start()
-
-
+    cmd = input()
+    if cmd == 'shutdown':
+        break
+    elif cmd == 'clear file':
+        with open('users.csv', 'w'):
+            pass
+    elif cmd == 'stop listen':
+        LISTEN = False
+    elif cmd == 'start listen':
+        LISTEN = True
+    elif cmd == 'stop log':
+        LOG = False
+    elif cmd == 'start log':
+        LOG = True
+    elif cmd == 'clear log':
+        if os.name == 'nt':
+            os.system('cls')
+        else:
+            os.system('clear')
+        with open('log_serv.txt', 'w'):
+            pass
 prnt('Остановка сервера')
 
