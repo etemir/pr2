@@ -69,13 +69,6 @@ def register(conn, login):
     conn.s_send(f'{login}, вы зарегестрированы!'.encode())
     return login
 
-def messaging(sock):
-    while True:
-        
-        msg = input()
-        prnt('Отправка данных клиенту')
-        conn.s_send(msg.encode())
-
 def listening(sock, login):
     try:
         while True:
@@ -94,7 +87,7 @@ def listening(sock, login):
 
 
 def user_thread(conn):
-    login = log_in(conn)
+    login = log_in(conn) 
     users.append([conn, login])
     threading.Thread(target = listening, args = (conn, login), daemon = True).start()
 
