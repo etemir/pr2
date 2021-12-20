@@ -38,6 +38,7 @@
 <img width="556" alt="image" src="https://user-images.githubusercontent.com/91737637/146839786-c75d79af-2886-4f06-966a-e0742a5efaa0.png">
 
 Очистка файла идентификации.
+
 <img width="297" alt="image" src="https://user-images.githubusercontent.com/91737637/146839967-80499e9a-227f-4f2d-9c30-fade9e7f7850.png">
 
 <img width="187" alt="image" src="https://user-images.githubusercontent.com/91737637/146840002-d4a77beb-8589-4b2f-b6fc-03b33d86d464.png">
