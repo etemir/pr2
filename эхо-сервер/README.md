@@ -35,3 +35,9 @@
 Дополните код клиента и сервера таким образом, чтобы они могли посылать друг другу множественные сообщения один в ответ на другое.
 
 <img width="914" alt="image" src="https://user-images.githubusercontent.com/91737637/146836735-49906276-94e8-4ba8-b5c3-1ac9d5d39743.png">
+
+В файле "users" хранятся логины и пароли пользователей.
+
+
+<img width="245" alt="image" src="https://user-images.githubusercontent.com/91737637/146837202-050fc10f-d5c1-4de1-9686-77649673040f.png">
+
